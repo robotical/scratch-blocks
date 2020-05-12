@@ -269,7 +269,8 @@ Blockly.Categories = {
   "control": "control",
   "sensing": "sensing",
   "operators": "operators",
-  "more": "more"
+  "more": "more",
+  "mv2": "mv2"
 };
 
 /**

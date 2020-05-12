@@ -82,6 +82,11 @@ Blockly.Colours = {
     "secondary": "#FF4D6A",
     "tertiary": "#FF3355"
   },
+  "mv2": {
+    "primary": "#37ABC8",
+    "secondary": "#133C46",
+    "tertiary": "#FFDA61"
+  },
   "text": "#575E75",
   "workspace": "#F9F9F9",
   "toolboxHover": "#4C97FF",
