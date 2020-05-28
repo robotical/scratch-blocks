@@ -6,6 +6,224 @@ goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 
+Blockly.Blocks['mv2_walk'] = {
+  /**
+   * Block to make Marty walk
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Walk %3 steps, step length %4, step time %5, turn %6 \%",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "STEPS"
+        },
+        {
+          "type": "input_value",
+          "name": "STEPLEN"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        },
+        {
+          "type": "input_value",
+          "name": "TURN"
+        }
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_step'] = {
+  /**
+   * Block to make Marty take a step
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit( {
+      "message0": "%1 %2 Take a step, step time %3 s, step length %4, turning %5 \%, ",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        },
+        {
+          "type": "input_value",
+          "name": "STEPLEN"
+        },
+        {
+          "type": "input_value",
+          "name": "TURN"
+        }
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+}
+
+Blockly.Blocks['mv2_kick'] = {
+  /**
+   * Block to make Marty kick
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 kick %4 leg, kick time %3 s, turn %5 \%",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extentsions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        },
+        {
+          "type": "input_value",
+          "name": "SIDE"
+        },
+        {
+          "type": "input_value",
+          "name": "TURN"
+        }
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+}
+
+Blockly.Blocks['mv2_sidestep'] = {
+  /**
+   * Block to make Marty sidestep
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 step to the %3 , step time %4 s, step length %5",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extentsions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "SIDE"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        },
+        {
+          "type": "input_value",
+          "name": "STEPLEN"
+        }
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+}
+
+Blockly.Blocks['mv2_sidefall'] = {
+  /**
+   * Block to make Marty sidestep
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 sidefall to the %3 , sidefall time %4 s, sidefall length %5",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extentsions/marty-small.svg",
+          "width": 40,
+          "heigh": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "SIDE"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        },
+        {
+          "type": "input_value",
+          "name": "STEPLEN"
+        }
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+}
+
+Blockly.Blocks['mv2_wiggle'] = {
+  /**
+   * Block to make Marty wiggle
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Wiggle for %3 s",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        }
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['mv2_demo_sensor'] = {
   /**
    * Block to give readout of demo sensor
@@ -56,7 +274,7 @@ Blockly.Blocks['mv2_set_demo_sensor'] = {
           "name": "SENSORVAL"
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["colours_mvs2", "shape_statement"]
     });
   }
 };
@@ -90,149 +308,3 @@ Blockly.Blocks['mv2_set_ip'] = {
   }
 };
 
-// Blockly.Blocks['mv2_hello'] = {};
-//
-// Blockly.Blocks['mv2_stop'] = {};
-//
-// Blockly.Blocks['mv2_disable_motors'] = {};
-//
-// Blockly.Blocks['mv2_enable_motors'] = {};
-
-Blockly.Blocks['mv2_stand_straight'] = {
-  /**
-   * Block to make Marty stand up straight
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit( {
-      "message0" : "%1 %2 Stand up straight %3",
-      "category" : Blockly.Categories.mv2,
-      "args0" : [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-        {
-          "type": "input_value",
-          "name": "MOVETIME"
-        }
-      ],
-      "extensions" : ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['mv2_wiggle'] = {
-  /**
-   * Block to make Marty wiggle
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 %2 Wiggle for %3 s",
-      "category": Blockly.Categories.motion,
-      "args0": [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-        {
-          "type": "input_value",
-          "name": "MOVETIME"
-        }
-      ],
-      "extensions": ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
-// Blockly.Blocks['mv2_circle_dance'] = {};
-//
-// Blockly.Blocks['mv2_play_sound'] = {};
-
-Blockly.Blocks['mv2_walk'] = {
-  /**
-   * Block to make Marty walk
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 %2 Walk %3 steps, step length %4, step time %5, turn %6 \%",
-      "category": Blockly.Categories.motion,
-      "args0": [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-        {
-          "type": "input_value",
-          "name": "STEPS"
-        },
-        {
-          "type": "input_value",
-          "name": "STEPLENGTH"
-        },
-        {
-          "type": "input_value",
-          "name": "MOVETIME"
-        },
-        {
-          "type": "input_value",
-          "name": "TURN"
-        }
-      ],
-      "extensions": ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
-/*Blockly.Blocks['mv2_walkf'] = {};
-
-Blockly.Blocks['mv2_walkb'] = {};
-
-Blockly.Blocks['mv2_kick'] = {};
-
-Blockly.Blocks['mv2_turn'] = {};
-
-Blockly.Blocks['mv2_lean'] = {};
-
-Blockly.Blocks['mv2_sidestep'] = {};
-
-Blockly.Blocks['mv2_eyes'] = {};
-
-Blockly.Blocks['mv2_lift_leg'] = {};
-
-Blockly.Blocks['mv2_lower_leg_action'] = {};
-
-Blockly.Blocks['mv2_lower_leg'] = {};
-
-Blockly.Blocks['mv2_move_leg'] = {};
-
-Blockly.Blocks['mv2_move_joint'] = {};
-
-Blockly.Blocks['mv2_get_batt'] = {};
-
-Blockly.Blocks['mv2_get_gpio'] = {};
-
-Blockly.Blocks['mv2_get_motor_current'] = {};
-
-Blockly.Blocks['mv2_get_accel'] = {};
-
-Blockly.Blocks['mv2_get_prox'] = {};
-
-Blockly.Blocks['mv2_set_blocking'] = {};*/
