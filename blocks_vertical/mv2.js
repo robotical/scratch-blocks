@@ -583,6 +583,93 @@ Blockly.Blocks['mv2_circleRight'] = {
   }
 };
 
+Blockly.Blocks['mv2_waveLeft'] = {
+  /**
+   * Block to make Marty wave with his left arm
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Wave left for %3 s",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        }
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_waveRight'] = {
+  /**
+   * Block to make Marty wave with his right arm
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Wave right arm for %3 s",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        }
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_standStraight'] = {
+  /**
+   * Block to make Marty stand up straight
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Stand up straight in %3 s",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        }
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['mv2_demo_sensor'] = {
   /**
    * Block to give readout of demo sensor
@@ -591,7 +678,7 @@ Blockly.Blocks['mv2_demo_sensor'] = {
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Demo sensor",
-      "category": Blockly.Categories.mv2,
+      "category": Blockly.Categories.sensing,
       "checkboxInFlyout": true,
       "args0": [
         {
@@ -617,7 +704,7 @@ Blockly.Blocks['mv2_set_demo_sensor'] = {
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Set Demo sensor to %3",
-      "category": Blockly.Categories.mv2,
+      "category": Blockly.Categories.sensing,
       "args0": [
         {
           "type": "field_image",
@@ -646,7 +733,7 @@ Blockly.Blocks['mv2_set_ip'] = {
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Set IP to %3",
-      "category": Blockly.Categories.mv2,
+      "category": Blockly.Categories.control,
       "args0": [
         {
           "type": "field_image",
