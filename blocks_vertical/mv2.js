@@ -333,7 +333,9 @@ Blockly.Blocks['mv2_lean'] = {
           "name": "SIDE",
           "options": [
             [ "left", 0 ],
-            [ "right", 1 ]
+            [ "right", 1 ],
+            [ "forward", 2],
+            [ "backward", 3]
           ]
         }
       ],
@@ -368,7 +370,8 @@ Blockly.Blocks['mv2_eyes'] = {
             [ "excited", "eyesExcited" ],
             [ "wide", "eyesWide" ],
             [ "angry", "eyesAngry" ],
-            [ "normal", "eyesNormal" ]
+            [ "normal", "eyesNormal" ],
+            [ "wiggle", "wiggleEyes"]
           ]
         }
       ],
@@ -401,15 +404,15 @@ Blockly.Blocks['mv2_moveLeg'] = {
           "name": "SIDE",
           "options": [
             [ "left", 0 ],
-            [ "right", 1 ]
+            [ "right", 3 ]
           ]
         },
         {
           "type": "field_dropdown",
           "name": "DIRECTION",
           "options": [
-            [ "forwards", 0 ],
-            [ "backwards", 1 ]
+            [ "forwards", 20 ],
+            [ "backwards", -20 ]
           ]
         }
       ],
@@ -484,6 +487,54 @@ Blockly.Blocks['mv2_lowerFoot'] = {
   }
 };
 
+Blockly.Blocks['mv2_moveJoint'] = {
+  /**
+   * Block to make Marty move a specific joint
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Move %3 to %4° in %5s",
+      "category": Blockly.Categories.motion,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SERVOCHOICE",
+          "options": [
+            [ "left hip", 0 ],
+            [ "left twist", 1 ],
+            [ "left knee", 2 ],
+            [ "right hip", 3 ],
+            [ "right twist", 4 ],
+            [ "right knee", 5 ],
+            [ "left arm", 6 ],
+            [ "right arm", 7 ],
+            [ "eyes", 8 ]
+          ]
+        },
+        {
+          "type": "input_value",
+          "name": "ANGLE"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        },
+      ],
+      "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['mv2_wave'] = {
   /**
    * Block to make Marty wave
@@ -517,31 +568,6 @@ Blockly.Blocks['mv2_wave'] = {
   }
 };
 
-Blockly.Blocks['mv2_waggleEyes'] = {
-  /**
-   * Block to make Marty waggle its eyes
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 %2 Waggle eyes",
-      "category": Blockly.Categories.motion,
-      "args0": [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-      ],
-      "extensions": ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
 Blockly.Blocks['mv2_dance'] = {
   /**
    * Block to make Marty perform a chosen dance
@@ -551,133 +577,6 @@ Blockly.Blocks['mv2_dance'] = {
     this.jsonInit({
       "message0": "%1 %2 Dance!",
       "category": Blockly.Categories.motion,
-      "args0": [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-      ],
-      "extensions": ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
-// SENSORS
-
-Blockly.Blocks['mv2_position'] = {
-  /**
-   * Block to report the position of Marty's joints
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 %2 Position of [joint]",
-      "category": Blockly.Categories.sensing,
-      "args0": [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-      ],
-      "extensions": ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['mv2_current'] = {
-  /**
-   * Block to report the current through Marty's joints
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 %2 Current through [joint]",
-      "category": Blockly.Categories.sensing,
-      "args0": [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-      ],
-      "extensions": ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['mv2_accelerometer'] = {
-  /**
-   * Block to report the status of Marty's accelerometer
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 %2 Status of accelerometer",
-      "category": Blockly.Categories.sensing,
-      "args0": [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-      ],
-      "extensions": ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['mv2_proximity'] = {
-  /**
-   * Block to report the status of Marty's proximity sensors
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 %2 Proximity to obstacle",
-      "category": Blockly.Categories.sensing,
-      "args0": [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-      ],
-      "extensions": ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['mv2_batteryLevel'] = {
-  /**
-   * Block to report Marty's current battery level
-   * @this Blockly.Block
-   */
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 %2 Battery %",
-      "category": Blockly.Categories.sensing,
       "args0": [
         {
           "type": "field_image",
@@ -721,6 +620,75 @@ Blockly.Blocks['mv2_playSound'] = {
         }
       ],
       "extensions": ["colours_mv2", "shape_statement"]
+    });
+  }
+};
+
+// SENSING
+
+Blockly.Blocks['mv2_batteryLevel'] = {
+  /**
+   * Block to display Marty's battery percentage - possibly just a proof-of-concept
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Remaining battery (%)",
+      "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        }
+      ],
+      "extensions": ["colours_mv2", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_position'] = {
+  /**
+   * Block to display the position of one of Marty's servos
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Position of %3 joint (in ° from 'zero')",
+      "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SERVOCHOICE",
+          "options": [
+            [ "left hip", 0 ],
+            [ "left twist", 1 ],
+            [ "left knee", 2 ],
+            [ "right hip", 3 ],
+            [ "right twist", 4 ],
+            [ "right knee", 5 ],
+            [ "left arm", 6 ],
+            [ "right arm", 7 ],
+            [ "eyes", 8 ]
+          ]
+        },
+      ],
+      "extensions": ["colours_mv2", "output_number"]
     });
   }
 };
@@ -813,11 +781,38 @@ Blockly.Blocks['mv2_set_ip'] = {
 
 // UNUSED
 
+/*
+
+Blockly.Blocks['mv2_waggleEyes'] = {
+  /!**
+   * Block to make Marty waggle its eyes
+   * @this Blockly.Block
+   *!/
+init: function() {
+  this.jsonInit({
+    "message0": "%1 %2 Waggle eyes",
+    "category": Blockly.Categories.motion,
+    "args0": [
+      {
+        "type": "field_image",
+        "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+        "width": 40,
+        "height": 40
+      },
+      {
+        "type": "field_vertical_separator"
+      },
+    ],
+    "extensions": ["colours_mv2", "shape_statement"]
+  });
+}
+};
+
 Blockly.Blocks['mv2_stop'] = {
-  /**
+  /!**
    * Block to make Marty freeze
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Stop!",
@@ -839,10 +834,10 @@ Blockly.Blocks['mv2_stop'] = {
 };
 
 Blockly.Blocks['mv2_standStraight'] = {
-  /**
+  /!**
    * Block to make Marty stand up straight
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Stand straight in %3s",
@@ -868,10 +863,10 @@ Blockly.Blocks['mv2_standStraight'] = {
 };
 
 Blockly.Blocks['mv2_sidefall'] = {
-  /**
+  /!**
    * Block to make Marty 'sidefall'
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 'Sidefall' to the %3 , sidefall time %4 s, sidefall length %5",
@@ -905,10 +900,10 @@ Blockly.Blocks['mv2_sidefall'] = {
 };
 
 Blockly.Blocks['mv2_stepLeft'] = {
-  /**
+  /!**
    * Block to make Marty take a step with his left foot
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Step left foot, with step time %3 s, step length %4 , turn %5 \% ",
@@ -942,10 +937,10 @@ Blockly.Blocks['mv2_stepLeft'] = {
 };
 
 Blockly.Blocks['mv2_stepRight'] = {
-  /**
+  /!**
    * Block to make Marty take a step with his right foot
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Step right foot, with step time %3 s, step length %4 , turn %5 \% ",
@@ -979,10 +974,10 @@ Blockly.Blocks['mv2_stepRight'] = {
 };
 
 Blockly.Blocks['mv2_kickLeft'] = {
-  /**
+  /!**
    * Block to make Marty kick with his left leg
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Kick left leg with kick time %3 s, turn %4 \% ",
@@ -1012,10 +1007,10 @@ Blockly.Blocks['mv2_kickLeft'] = {
 };
 
 Blockly.Blocks['mv2_kickRight'] = {
-  /**
+  /!**
    * Block to make Marty kick with his left leg
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Kick right leg with kick time %3 s, turn %4 \% ",
@@ -1045,10 +1040,10 @@ Blockly.Blocks['mv2_kickRight'] = {
 };
 
 Blockly.Blocks['mv2_sidestepLeft'] = {
-  /**
+  /!**
    * Block to make Marty sidestep to the left
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Sidestep left with step time %3 s, step length %4",
@@ -1078,10 +1073,10 @@ Blockly.Blocks['mv2_sidestepLeft'] = {
 };
 
 Blockly.Blocks['mv2_sidestepRight'] = {
-  /**
+  /!**
    * Block to make Marty sidestep to the right
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Sidestep right with step time %3 s, step length %4",
@@ -1111,10 +1106,10 @@ Blockly.Blocks['mv2_sidestepRight'] = {
 };
 
 Blockly.Blocks['mv2_circleLeft'] = {
-  /**
+  /!**
    * Block to make Marty circle his body left
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Circle left for %3 s",
@@ -1140,10 +1135,10 @@ Blockly.Blocks['mv2_circleLeft'] = {
 };
 
 Blockly.Blocks['mv2_circleRight'] = {
-  /**
+  /!**
    * Block to make Marty circle his body right
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Circle right for %3 s",
@@ -1169,10 +1164,10 @@ Blockly.Blocks['mv2_circleRight'] = {
 };
 
 Blockly.Blocks['mv2_waveLeft'] = {
-  /**
+  /!**
    * Block to make Marty wave with his left arm
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Wave left for %3 s",
@@ -1198,10 +1193,10 @@ Blockly.Blocks['mv2_waveLeft'] = {
 };
 
 Blockly.Blocks['mv2_waveRight'] = {
-  /**
+  /!**
    * Block to make Marty wave with his right arm
    * @this Blockly.Block
-   */
+   *!/
   init: function() {
     this.jsonInit({
       "message0": "%1 %2 Wave right arm for %3 s",
@@ -1224,4 +1219,4 @@ Blockly.Blocks['mv2_waveRight'] = {
       "extensions": ["colours_mv2", "shape_statement"]
     });
   }
-};
+};*/
