@@ -17,6 +17,7 @@ Blockly.Blocks['mv2_getReady'] = {
     this.jsonInit({
       "message0": "%1 %2 Get ready!",
       "category": Blockly.Categories.control,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -28,7 +29,7 @@ Blockly.Blocks['mv2_getReady'] = {
           "type": "field_vertical_separator"
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -42,6 +43,7 @@ Blockly.Blocks['mv2_walk_fw'] = {
     this.jsonInit({
       "message0": "%1 %2 Walk %3 steps forwards",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -57,7 +59,7 @@ Blockly.Blocks['mv2_walk_fw'] = {
           "name": "STEPS"
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -71,6 +73,7 @@ Blockly.Blocks['mv2_walk_bw'] = {
     this.jsonInit({
       "message0": "%1 %2 Walk %3 steps backwards",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -86,7 +89,7 @@ Blockly.Blocks['mv2_walk_bw'] = {
           "name": "STEPS"
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -687,6 +690,73 @@ Blockly.Blocks['mv2_position'] = {
             [ "eyes", 8 ]
           ]
         },
+      ],
+      "extensions": ["colours_mv2", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_current'] = {
+  /**
+   * Block to display the current through one of Marty's servos
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Current at %3 joint (in mA)",
+      "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SERVOCHOICE",
+          "options": [
+            [ "left hip", 0 ],
+            [ "left twist", 1 ],
+            [ "left knee", 2 ],
+            [ "right hip", 3 ],
+            [ "right twist", 4 ],
+            [ "right knee", 5 ],
+            [ "left arm", 6 ],
+            [ "right arm", 7 ],
+            [ "eyes", 8 ]
+          ]
+        },
+      ],
+      "extensions": ["colours_mv2", "output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_accelerometer'] = {
+  /**
+   * Block to display Marty's battery percentage - possibly just a proof-of-concept
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Accelerometer reading (x, y, z)",
+      "category": Blockly.Categories.sensing,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        }
       ],
       "extensions": ["colours_mv2", "output_number"]
     });
