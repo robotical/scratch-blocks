@@ -103,6 +103,7 @@ Blockly.Blocks['mv2_walk'] = {
     this.jsonInit( {
       "message0": "%1 %2 Walk %3 steps with step length %4mm and step time %5s, and turn %6°",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -130,7 +131,7 @@ Blockly.Blocks['mv2_walk'] = {
           "name": "TURN"
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -144,6 +145,7 @@ Blockly.Blocks['mv2_turn'] = {
     this.jsonInit( {
       "message0": "%1 %2 Turn %3 steps %4",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -167,7 +169,7 @@ Blockly.Blocks['mv2_turn'] = {
           ]
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -181,6 +183,7 @@ Blockly.Blocks['mv2_wiggle'] = {
     this.jsonInit({
       "message0": "%1 %2 Wiggle",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -192,7 +195,7 @@ Blockly.Blocks['mv2_wiggle'] = {
           "type": "field_vertical_separator"
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -206,6 +209,7 @@ Blockly.Blocks['mv2_circle'] = {
     this.jsonInit({
       "message0": "%1 %2 Circle dance %4 for %3s",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -229,7 +233,7 @@ Blockly.Blocks['mv2_circle'] = {
           ]
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -243,6 +247,7 @@ Blockly.Blocks['mv2_kick'] = {
     this.jsonInit({
       "message0": "%1 %2 Kick %3 leg",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -266,7 +271,7 @@ Blockly.Blocks['mv2_kick'] = {
           "name": "TURN"
         }*/
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -280,6 +285,7 @@ Blockly.Blocks['mv2_slide'] = {
     this.jsonInit({
       "message0": "%1 %2 Slide %3 times to the %4",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -303,7 +309,7 @@ Blockly.Blocks['mv2_slide'] = {
           ]
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -317,6 +323,7 @@ Blockly.Blocks['mv2_lean'] = {
     this.jsonInit({
       "message0": "%1 %2 Lean %4 for %3s",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -342,7 +349,7 @@ Blockly.Blocks['mv2_lean'] = {
           ]
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -356,6 +363,7 @@ Blockly.Blocks['mv2_eyes'] = {
     this.jsonInit({
       "message0": "%1 %2 Eyes: %3",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -368,17 +376,17 @@ Blockly.Blocks['mv2_eyes'] = {
         },
         {
           "type": "field_dropdown",
-          "name": "SIDE",
+          "name": "COMMAND",
           "options": [
-            [ "excited", "eyesExcited" ],
-            [ "wide", "eyesWide" ],
-            [ "angry", "eyesAngry" ],
-            [ "normal", "eyesNormal" ],
-            [ "wiggle", "wiggleEyes"]
+            [ "excited", 'eyesExcited' ],
+            [ "wide", 'eyesWide' ],
+            [ "angry", 'eyesAngry' ],
+            [ "normal", 'eyesNormal' ],
+            [ "wiggle", 'wiggleEyes' ]
           ]
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -392,6 +400,7 @@ Blockly.Blocks['mv2_moveLeg'] = {
     this.jsonInit({
       "message0": "%1 %2 Move %3 leg %4",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -415,11 +424,11 @@ Blockly.Blocks['mv2_moveLeg'] = {
           "name": "DIRECTION",
           "options": [
             [ "forwards", 20 ],
-            [ "backwards", -20 ]
+            [ "backwards", (-20) ]
           ]
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -433,6 +442,7 @@ Blockly.Blocks['mv2_liftFoot'] = {
     this.jsonInit({
       "message0": "%1 %2 Lift %3 foot",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -452,7 +462,7 @@ Blockly.Blocks['mv2_liftFoot'] = {
           ]
         },
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -466,6 +476,7 @@ Blockly.Blocks['mv2_lowerFoot'] = {
     this.jsonInit({
       "message0": "%1 %2 Lower %3 foot",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -485,7 +496,7 @@ Blockly.Blocks['mv2_lowerFoot'] = {
           ]
         },
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -499,6 +510,7 @@ Blockly.Blocks['mv2_moveJoint'] = {
     this.jsonInit({
       "message0": "%1 %2 Move %3 to %4° in %5s",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -533,7 +545,7 @@ Blockly.Blocks['mv2_moveJoint'] = {
           "name": "MOVETIME"
         },
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -547,6 +559,7 @@ Blockly.Blocks['mv2_wave'] = {
     this.jsonInit({
       "message0": "%1 %2 Wave %3 arm",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -566,7 +579,7 @@ Blockly.Blocks['mv2_wave'] = {
           ]
         },
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -580,6 +593,7 @@ Blockly.Blocks['mv2_dance'] = {
     this.jsonInit({
       "message0": "%1 %2 Dance!",
       "category": Blockly.Categories.motion,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -591,7 +605,7 @@ Blockly.Blocks['mv2_dance'] = {
           "type": "field_vertical_separator"
         },
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -607,6 +621,7 @@ Blockly.Blocks['mv2_playSound'] = {
     this.jsonInit({
       "message0": "%1 %2 Play sound: %3",
       "category": Blockly.Categories.sound,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -622,7 +637,7 @@ Blockly.Blocks['mv2_playSound'] = {
           "name": "FILENAME"
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -638,6 +653,7 @@ Blockly.Blocks['mv2_batteryLevel'] = {
     this.jsonInit({
       "message0": "%1 %2 Remaining battery (%)",
       "category": Blockly.Categories.sensing,
+      "colour": 164,
       "checkboxInFlyout": true,
       "args0": [
         {
@@ -650,7 +666,7 @@ Blockly.Blocks['mv2_batteryLevel'] = {
           "type": "field_vertical_separator"
         }
       ],
-      "extensions": ["colours_mv2", "output_number"]
+      "extensions": ["output_number"]
     });
   }
 };
@@ -664,6 +680,7 @@ Blockly.Blocks['mv2_position'] = {
     this.jsonInit({
       "message0": "%1 %2 Position of %3 joint (in ° from 'zero')",
       "category": Blockly.Categories.sensing,
+      "colour": 164,
       "checkboxInFlyout": true,
       "args0": [
         {
@@ -691,7 +708,7 @@ Blockly.Blocks['mv2_position'] = {
           ]
         },
       ],
-      "extensions": ["colours_mv2", "output_number"]
+      "extensions": ["output_number"]
     });
   }
 };
@@ -705,6 +722,7 @@ Blockly.Blocks['mv2_current'] = {
     this.jsonInit({
       "message0": "%1 %2 Current at %3 joint (in mA)",
       "category": Blockly.Categories.sensing,
+      "colour": 164,
       "checkboxInFlyout": true,
       "args0": [
         {
@@ -732,7 +750,7 @@ Blockly.Blocks['mv2_current'] = {
           ]
         },
       ],
-      "extensions": ["colours_mv2", "output_number"]
+      "extensions": ["output_number"]
     });
   }
 };
@@ -746,6 +764,7 @@ Blockly.Blocks['mv2_accelerometer'] = {
     this.jsonInit({
       "message0": "%1 %2 Accelerometer reading (x, y, z)",
       "category": Blockly.Categories.sensing,
+      "colour": 164,
       "checkboxInFlyout": true,
       "args0": [
         {
@@ -758,7 +777,7 @@ Blockly.Blocks['mv2_accelerometer'] = {
           "type": "field_vertical_separator"
         }
       ],
-      "extensions": ["colours_mv2", "output_number"]
+      "extensions": ["output_number"]
     });
   }
 };
@@ -774,6 +793,7 @@ Blockly.Blocks['mv2_demo_sensor'] = {
     this.jsonInit({
       "message0": "%1 %2 Demo sensor",
       "category": Blockly.Categories.sensing,
+      "colour": 164,
       "checkboxInFlyout": true,
       "args0": [
         {
@@ -786,7 +806,7 @@ Blockly.Blocks['mv2_demo_sensor'] = {
           "type": "field_vertical_separator"
         }
       ],
-      "extensions": ["colours_mv2", "output_number"]
+      "extensions": ["output_number"]
     });
   }
 };
@@ -800,6 +820,7 @@ Blockly.Blocks['mv2_set_demo_sensor'] = {
     this.jsonInit({
       "message0": "%1 %2 Set Demo sensor to %3",
       "category": Blockly.Categories.sensing,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -815,7 +836,7 @@ Blockly.Blocks['mv2_set_demo_sensor'] = {
           "name": "SENSORVAL"
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
@@ -829,6 +850,7 @@ Blockly.Blocks['mv2_set_ip'] = {
     this.jsonInit({
       "message0": "%1 %2 Connect via IP: %3",
       "category": Blockly.Categories.control,
+      "colour": 164,
       "args0": [
         {
           "type": "field_image",
@@ -844,7 +866,7 @@ Blockly.Blocks['mv2_set_ip'] = {
           "name": "IP"
         }
       ],
-      "extensions": ["colours_mv2", "shape_statement"]
+      "extensions": ["shape_statement"]
     });
   }
 };
