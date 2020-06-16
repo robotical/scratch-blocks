@@ -423,8 +423,8 @@ Blockly.Blocks['mv2_moveLeg'] = {
           "type": "field_dropdown",
           "name": "DIRECTION",
           "options": [
-            [ "forwards", 20 ],
-            [ "backwards", (-20) ]
+            [ "forwards", (-20) ],
+            [ "backwards", 20 ]
           ]
         }
       ],
