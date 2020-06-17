@@ -610,6 +610,66 @@ Blockly.Blocks['mv2_dance'] = {
   }
 };
 
+Blockly.Blocks['mv2_standStraight'] = {
+  /**
+   * Block to make Marty stand up straight
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Stand straight in %3s",
+      "category": Blockly.Categories.motion,
+      "colour": 164,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        }
+      ],
+      "extensions": ["shape_statement"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_hold'] = {
+  /**
+   * Block to make Marty hold his current position
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Hold this position for %3s",
+      "category": Blockly.Categories.motion,
+      "colour": 164,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "MOVETIME"
+        }
+      ],
+      "extensions": ["shape_statement"]
+    });
+  }
+};
+
 // SOUND
 
 Blockly.Blocks['mv2_playSound'] = {
@@ -918,35 +978,6 @@ Blockly.Blocks['mv2_stop'] = {
         },
         {
           "type": "field_vertical_separator"
-        }
-      ],
-      "extensions": ["colours_mv2", "shape_statement"]
-    });
-  }
-};
-
-Blockly.Blocks['mv2_standStraight'] = {
-  /!**
-   * Block to make Marty stand up straight
-   * @this Blockly.Block
-   *!/
-  init: function() {
-    this.jsonInit({
-      "message0": "%1 %2 Stand straight in %3s",
-      "category": Blockly.Categories.motion,
-      "args0": [
-        {
-          "type": "field_image",
-          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
-          "width": 40,
-          "height": 40
-        },
-        {
-          "type": "field_vertical_separator"
-        },
-        {
-          "type": "input_value",
-          "name": "MOVETIME"
         }
       ],
       "extensions": ["colours_mv2", "shape_statement"]
