@@ -164,8 +164,8 @@ Blockly.Blocks['mv2_turn'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", 0 ],
-            [ "right", 1 ]
+            [ "left", '0' ],
+            [ "right", '1' ]
           ]
         }
       ],
@@ -228,8 +228,8 @@ Blockly.Blocks['mv2_circle'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", 0 ],
-            [ "right", 1 ]
+            [ "left", '0' ],
+            [ "right", '1' ]
           ]
         }
       ],
@@ -262,8 +262,8 @@ Blockly.Blocks['mv2_kick'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", 0 ],
-            [ "right", 1 ]
+            [ "left", '0' ],
+            [ "right", '1' ]
           ]
         },
         /*{
@@ -304,8 +304,8 @@ Blockly.Blocks['mv2_slide'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", 0 ],
-            [ "right", 1 ]
+            [ "left", '0' ],
+            [ "right", '1' ]
           ]
         }
       ],
@@ -342,10 +342,10 @@ Blockly.Blocks['mv2_lean'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", 0 ],
-            [ "right", 1 ],
-            [ "forward", 2],
-            [ "backward", 3]
+            [ "left", '0' ],
+            [ "right", '1' ],
+            [ "forward", '2' ],
+            [ "backward", '3' ]
           ]
         }
       ],
@@ -415,16 +415,16 @@ Blockly.Blocks['mv2_moveLeg'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", 0 ],
-            [ "right", 3 ]
+            [ "left", '0' ],
+            [ "right", '3' ]
           ]
         },
         {
           "type": "field_dropdown",
           "name": "DIRECTION",
           "options": [
-            [ "forwards", (-20) ],
-            [ "backwards", 20 ]
+            [ "forwards", '-20' ],
+            [ "backwards", '20' ]
           ]
         }
       ],
@@ -457,8 +457,8 @@ Blockly.Blocks['mv2_liftFoot'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", 0 ],
-            [ "right", 1 ]
+            [ "left", '0' ],
+            [ "right", '1' ]
           ]
         },
       ],
@@ -491,8 +491,8 @@ Blockly.Blocks['mv2_lowerFoot'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", 0 ],
-            [ "right", 1 ]
+            [ "left", '0' ],
+            [ "right", '1' ]
           ]
         },
       ],
@@ -525,15 +525,15 @@ Blockly.Blocks['mv2_moveJoint'] = {
           "type": "field_dropdown",
           "name": "SERVOCHOICE",
           "options": [
-            [ "left hip", 0 ],
-            [ "left twist", 1 ],
-            [ "left knee", 2 ],
-            [ "right hip", 3 ],
-            [ "right twist", 4 ],
-            [ "right knee", 5 ],
-            [ "left arm", 6 ],
-            [ "right arm", 7 ],
-            [ "eyes", 8 ]
+            [ "left hip", '0' ],
+            [ "left twist", '1' ],
+            [ "left knee", '2' ],
+            [ "right hip", '3' ],
+            [ "right twist", '4' ],
+            [ "right knee", '5' ],
+            [ "left arm", '6' ],
+            [ "right arm", '7' ],
+            [ "eyes", '8' ]
           ]
         },
         {
@@ -574,8 +574,8 @@ Blockly.Blocks['mv2_wave'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", 0 ],
-            [ "right", 1 ]
+            [ "left", '0' ],
+            [ "right", '1' ]
           ]
         },
       ],
@@ -756,15 +756,15 @@ Blockly.Blocks['mv2_position'] = {
           "type": "field_dropdown",
           "name": "SERVOCHOICE",
           "options": [
-            [ "left hip", 0 ],
-            [ "left twist", 1 ],
-            [ "left knee", 2 ],
-            [ "right hip", 3 ],
-            [ "right twist", 4 ],
-            [ "right knee", 5 ],
-            [ "left arm", 6 ],
-            [ "right arm", 7 ],
-            [ "eyes", 8 ]
+            [ "left hip", '0' ],
+            [ "left twist", '1' ],
+            [ "left knee", '2' ],
+            [ "right hip", '3' ],
+            [ "right twist", '4' ],
+            [ "right knee", '5' ],
+            [ "left arm", '6' ],
+            [ "right arm", '7' ],
+            [ "eyes", '8' ]
           ]
         },
       ],
@@ -798,15 +798,15 @@ Blockly.Blocks['mv2_current'] = {
           "type": "field_dropdown",
           "name": "SERVOCHOICE",
           "options": [
-            [ "left hip", 0 ],
-            [ "left twist", 1 ],
-            [ "left knee", 2 ],
-            [ "right hip", 3 ],
-            [ "right twist", 4 ],
-            [ "right knee", 5 ],
-            [ "left arm", 6 ],
-            [ "right arm", 7 ],
-            [ "eyes", 8 ]
+            [ "left hip", '0' ],
+            [ "left twist", '1' ],
+            [ "left knee", '2' ],
+            [ "right hip", '3' ],
+            [ "right twist", '4' ],
+            [ "right knee", '5' ],
+            [ "left arm", '6' ],
+            [ "right arm", '7' ],
+            [ "eyes", '8' ]
           ]
         },
       ],
