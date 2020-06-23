@@ -706,7 +706,7 @@ Blockly.Blocks['mv2_playSound'] = {
 
 Blockly.Blocks['mv2_batteryLevel'] = {
   /**
-   * Block to display Marty's battery percentage - possibly just a proof-of-concept
+   * Block to display Marty's battery percentage
    * @this Blockly.Block
    */
   init: function() {
@@ -815,14 +815,68 @@ Blockly.Blocks['mv2_current'] = {
   }
 };
 
-Blockly.Blocks['mv2_accelerometer'] = {
+Blockly.Blocks['mv2_accelerometerX'] = {
   /**
-   * Block to display Marty's battery percentage - possibly just a proof-of-concept
+   * Block to display Marty's accelerometer X-axis state
    * @this Blockly.Block
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Accelerometer reading (x, y, z)",
+      "message0": "%1 %2 Accelerometer X",
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        }
+      ],
+      "extensions": ["output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_accelerometerY'] = {
+  /**
+   * Block to display Marty's accelerometer Y-axis state
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Accelerometer Y",
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        }
+      ],
+      "extensions": ["output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_accelerometerZ'] = {
+  /**
+   * Block to display Marty's accelerometer Z-axis state
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 Accelerometer Z",
       "category": Blockly.Categories.sensing,
       "colour": 164,
       "checkboxInFlyout": true,
