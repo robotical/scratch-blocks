@@ -693,9 +693,17 @@ Blockly.Blocks['mv2_playSound'] = {
           "type": "field_vertical_separator"
         },
         {
-          "type": "input_value",
-          "name": "FILENAME"
-        }
+          "type": "field_dropdown",
+          "name": "SOUND",
+          "options": [
+            [ "confusion", 'confused.raw' ],
+            [ "disbelief", 'disbelief.raw' ],
+            [ "excitement", 'excited.raw' ],
+            [ "no way!", 'no_way.raw' ],
+            [ "no!", 'no.raw' ],
+            [ "whistle", 'whistle.raw' ],
+          ]
+        },
       ],
       "extensions": ["shape_statement"]
     });
