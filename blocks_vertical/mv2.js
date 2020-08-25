@@ -15,7 +15,7 @@ Blockly.Blocks['mv2_getReady'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Get ready!",
+      "message0": Blockly.Msg.MV2_GETREADY,
       "category": Blockly.Categories.control,
       "colour": 164,
       "args0": [
@@ -41,7 +41,7 @@ Blockly.Blocks['mv2_walk_fw'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Walk %3 steps forwards",
+      "message0": Blockly.Msg.MV2_WALK_FW,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -71,7 +71,7 @@ Blockly.Blocks['mv2_walk_bw'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Walk %3 steps backwards",
+      "message0": Blockly.Msg.MV2_WALK_BW,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -101,7 +101,7 @@ Blockly.Blocks['mv2_walk'] = {
    */
   init: function() {
     this.jsonInit( {
-      "message0": "%1 %2 Walk %3 steps with step length %4mm and step time %5s, and turn %6°",
+      "message0": Blockly.Msg.MV2_WALK,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -143,7 +143,7 @@ Blockly.Blocks['mv2_turn'] = {
    */
   init: function() {
     this.jsonInit( {
-      "message0": "%1 %2 Turn %3 steps %4",
+      "message0": Blockly.Msg.MV2_TURN,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -164,8 +164,8 @@ Blockly.Blocks['mv2_turn'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", '0' ],
-            [ "right", '1' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT, '1' ]
           ]
         }
       ],
@@ -181,7 +181,7 @@ Blockly.Blocks['mv2_wiggle'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Wiggle",
+      "message0": Blockly.Msg.MV2_WIGGLE,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -207,7 +207,7 @@ Blockly.Blocks['mv2_circle'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Circle dance %4 for %3s",
+      "message0": Blockly.Msg.MV2_CIRCLE,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -228,8 +228,8 @@ Blockly.Blocks['mv2_circle'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", '0' ],
-            [ "right", '1' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT, '1' ]
           ]
         }
       ],
@@ -245,7 +245,7 @@ Blockly.Blocks['mv2_kick'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Kick %3 leg",
+      "message0": Blockly.Msg.MV2_KICK,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -262,8 +262,8 @@ Blockly.Blocks['mv2_kick'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", '0' ],
-            [ "right", '1' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT, '1' ]
           ]
         },
         /*{
@@ -283,7 +283,7 @@ Blockly.Blocks['mv2_slide'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Slide %3 times to the %4",
+      "message0": Blockly.Msg.MV2_SLIDE,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -304,8 +304,8 @@ Blockly.Blocks['mv2_slide'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", '0' ],
-            [ "right", '1' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT, '1' ]
           ]
         }
       ],
@@ -321,7 +321,7 @@ Blockly.Blocks['mv2_lean'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Lean %4 for %3s",
+      "message0": Blockly.Msg.MV2_LEAN,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -342,10 +342,10 @@ Blockly.Blocks['mv2_lean'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", '0' ],
-            [ "right", '1' ],
-            [ "forward", '2' ],
-            [ "backward", '3' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_FORWARD, '2' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_BACKWARD, '3' ]
           ]
         }
       ],
@@ -361,7 +361,7 @@ Blockly.Blocks['mv2_eyes'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Eyes: %3",
+      "message0": Blockly.Msg.MV2_EYES,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -378,11 +378,11 @@ Blockly.Blocks['mv2_eyes'] = {
           "type": "field_dropdown",
           "name": "COMMAND",
           "options": [
-            [ "excited", 'eyesExcited' ],
-            [ "wide", 'eyesWide' ],
-            [ "angry", 'eyesAngry' ],
-            [ "normal", 'eyesNormal' ],
-            [ "wiggle", 'wiggleEyes' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_EXCITED, 'eyesExcited' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_WIDE, 'eyesWide' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_ANGRY, 'eyesAngry' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_NORMAL, 'eyesNormal' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_WIGGLE, 'wiggleEyes' ]
           ]
         }
       ],
@@ -398,7 +398,7 @@ Blockly.Blocks['mv2_moveLeg'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Move %3 leg %4",
+      "message0": Blockly.Msg.MV2_MOVELEG,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -415,16 +415,16 @@ Blockly.Blocks['mv2_moveLeg'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", '0' ],
-            [ "right", '3' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT, '3' ]
           ]
         },
         {
           "type": "field_dropdown",
           "name": "DIRECTION",
           "options": [
-            [ "forwards", '-20' ],
-            [ "backwards", '20' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_FORWARD, '-20' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_BACKWARD, '20' ]
           ]
         }
       ],
@@ -440,7 +440,7 @@ Blockly.Blocks['mv2_liftFoot'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Lift %3 foot",
+      "message0": Blockly.Msg.MV2_LIFTFOOT,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -457,8 +457,8 @@ Blockly.Blocks['mv2_liftFoot'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", '0' ],
-            [ "right", '1' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT, '1' ]
           ]
         },
       ],
@@ -474,7 +474,7 @@ Blockly.Blocks['mv2_lowerFoot'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Lower %3 foot",
+      "message0": Blockly.Msg.MV2_LOWERFOOT,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -491,8 +491,8 @@ Blockly.Blocks['mv2_lowerFoot'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", '0' ],
-            [ "right", '1' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT, '1' ]
           ]
         },
       ],
@@ -508,7 +508,7 @@ Blockly.Blocks['mv2_moveJoint'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Move %3 to %4° in %5s",
+      "message0": Blockly.Msg.MV2_MOVEJOINT,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -525,15 +525,15 @@ Blockly.Blocks['mv2_moveJoint'] = {
           "type": "field_dropdown",
           "name": "SERVOCHOICE",
           "options": [
-            [ "left hip", '0' ],
-            [ "left twist", '1' ],
-            [ "left knee", '2' ],
-            [ "right hip", '3' ],
-            [ "right twist", '4' ],
-            [ "right knee", '5' ],
-            [ "left arm", '6' ],
-            [ "right arm", '7' ],
-            [ "eyes", '8' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTHIP, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTTWIST , '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTKNEE, '2' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTHIP, '3' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTTWIST, '4' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTKNEE, '5' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTARM, '6' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTARM, '7' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_EYES, '8' ]
           ]
         },
         {
@@ -557,7 +557,7 @@ Blockly.Blocks['mv2_wave'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Wave %3 arm",
+      "message0": Blockly.Msg.MV2_WAVE,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -574,8 +574,8 @@ Blockly.Blocks['mv2_wave'] = {
           "type": "field_dropdown",
           "name": "SIDE",
           "options": [
-            [ "left", '0' ],
-            [ "right", '1' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT, '1' ]
           ]
         },
       ],
@@ -591,7 +591,7 @@ Blockly.Blocks['mv2_dance'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Dance!",
+      "message0": Blockly.Msg.MV2_DANCE,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -617,7 +617,7 @@ Blockly.Blocks['mv2_standStraight'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Stand straight in %3s",
+      "message0": Blockly.Msg.MV2_STANDSTRAIGHT,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -647,7 +647,7 @@ Blockly.Blocks['mv2_hold'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Hold this position for %3s",
+      "message0": Blockly.Msg.MV2_HOLD,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -679,7 +679,7 @@ Blockly.Blocks['mv2_playSound'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Play sound: %3",
+      "message0": Blockly.Msg.MV2_PLAYSOUND,
       "category": Blockly.Categories.sound,
       "colour": 164,
       "args0": [
@@ -696,12 +696,12 @@ Blockly.Blocks['mv2_playSound'] = {
           "type": "field_dropdown",
           "name": "SOUND",
           "options": [
-            [ "confusion", 'confused.raw' ],
-            [ "disbelief", 'disbelief.raw' ],
-            [ "excitement", 'excited.raw' ],
-            [ "no way!", 'no_way.raw' ],
-            [ "no!", 'no.raw' ],
-            [ "whistle", 'whistle.raw' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_CONFUSIONSOUND, 'confused.raw' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_DISBELIEFSOUND, 'disbelief.raw' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_EXCITEMENTSOUND, 'excited.raw' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_NOWAYSOUND, 'no_way.raw' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_NOSOUND, 'no.raw' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_WHISTLESOUND, 'whistle.raw' ],
           ]
         },
       ],
@@ -719,7 +719,7 @@ Blockly.Blocks['mv2_batteryLevel'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Remaining battery (%)",
+      "message0": Blockly.Msg.MV2_BATTERYLEVEL,
       "category": Blockly.Categories.sensing,
       "colour": 164,
       "checkboxInFlyout": true,
@@ -746,7 +746,7 @@ Blockly.Blocks['mv2_position'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Position of %3 joint (in ° from 'zero')",
+      "message0": Blockly.Msg.MV2_POSITION,
       "category": Blockly.Categories.sensing,
       "colour": 164,
       "checkboxInFlyout": true,
@@ -764,15 +764,15 @@ Blockly.Blocks['mv2_position'] = {
           "type": "field_dropdown",
           "name": "SERVOCHOICE",
           "options": [
-            [ "left hip", '0' ],
-            [ "left twist", '1' ],
-            [ "left knee", '2' ],
-            [ "right hip", '3' ],
-            [ "right twist", '4' ],
-            [ "right knee", '5' ],
-            [ "left arm", '6' ],
-            [ "right arm", '7' ],
-            [ "eyes", '8' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTHIP, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTTWIST , '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTKNEE, '2' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTHIP, '3' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTTWIST, '4' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTKNEE, '5' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTARM, '6' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTARM, '7' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_EYES, '8' ]
           ]
         },
       ],
@@ -788,7 +788,7 @@ Blockly.Blocks['mv2_current'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Current at %3 joint (in mA)",
+      "message0": Blockly.Msg.MV2_CURRENT,
       "category": Blockly.Categories.sensing,
       "colour": 164,
       "checkboxInFlyout": true,
@@ -806,15 +806,15 @@ Blockly.Blocks['mv2_current'] = {
           "type": "field_dropdown",
           "name": "SERVOCHOICE",
           "options": [
-            [ "left hip", '0' ],
-            [ "left twist", '1' ],
-            [ "left knee", '2' ],
-            [ "right hip", '3' ],
-            [ "right twist", '4' ],
-            [ "right knee", '5' ],
-            [ "left arm", '6' ],
-            [ "right arm", '7' ],
-            [ "eyes", '8' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTHIP, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTTWIST , '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTKNEE, '2' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTHIP, '3' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTTWIST, '4' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTKNEE, '5' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFTARM, '6' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHTARM, '7' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_EYES, '8' ]
           ]
         },
       ],
@@ -830,7 +830,7 @@ Blockly.Blocks['mv2_accelerometerX'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Accelerometer X",
+      "message0": Blockly.Msg.MV2_ACCELEROMETERX,
       "category": Blockly.Categories.sensing,
       "colour": 164,
       "checkboxInFlyout": true,
@@ -857,7 +857,7 @@ Blockly.Blocks['mv2_accelerometerY'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Accelerometer Y",
+      "message0": Blockly.Msg.MV2_ACCELEROMETERY,
       "category": Blockly.Categories.sensing,
       "colour": 164,
       "checkboxInFlyout": true,
@@ -884,7 +884,7 @@ Blockly.Blocks['mv2_accelerometerZ'] = {
    */
   init: function() {
     this.jsonInit({
-      "message0": "%1 %2 Accelerometer Z",
+      "message0": Blockly.Msg.MV2_ACCELEROMETERZ,
       "category": Blockly.Categories.sensing,
       "colour": 164,
       "checkboxInFlyout": true,
