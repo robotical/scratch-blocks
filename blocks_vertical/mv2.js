@@ -712,7 +712,7 @@ Blockly.Blocks['mv2_playSound'] = {
 
 // SENSING
 
-Blockly.Blocks['mv2_batteryLevel'] = {
+Blockly.Blocks['BatteryPercentage'] = {
   /**
    * Block to display Marty's battery percentage
    * @this Blockly.Block
@@ -739,7 +739,7 @@ Blockly.Blocks['mv2_batteryLevel'] = {
   }
 };
 
-Blockly.Blocks['mv2_position'] = {
+Blockly.Blocks['ServoPosition'] = {
   /**
    * Block to display the position of one of Marty's servos
    * @this Blockly.Block
@@ -781,7 +781,7 @@ Blockly.Blocks['mv2_position'] = {
   }
 };
 
-Blockly.Blocks['mv2_current'] = {
+Blockly.Blocks['ServoCurrent'] = {
   /**
    * Block to display the current through one of Marty's servos
    * @this Blockly.Block
@@ -823,7 +823,7 @@ Blockly.Blocks['mv2_current'] = {
   }
 };
 
-Blockly.Blocks['mv2_accelerometerX'] = {
+Blockly.Blocks['XAxisMovement'] = {
   /**
    * Block to display Marty's accelerometer X-axis state
    * @this Blockly.Block
@@ -850,7 +850,7 @@ Blockly.Blocks['mv2_accelerometerX'] = {
   }
 };
 
-Blockly.Blocks['mv2_accelerometerY'] = {
+Blockly.Blocks['YAxisMovement'] = {
   /**
    * Block to display Marty's accelerometer Y-axis state
    * @this Blockly.Block
@@ -877,7 +877,7 @@ Blockly.Blocks['mv2_accelerometerY'] = {
   }
 };
 
-Blockly.Blocks['mv2_accelerometerZ'] = {
+Blockly.Blocks['ZAxisMovement'] = {
   /**
    * Block to display Marty's accelerometer Z-axis state
    * @this Blockly.Block
