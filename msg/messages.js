@@ -180,6 +180,27 @@ Blockly.Msg.MOTION_XSCROLL = 'x scroll';
 Blockly.Msg.MOTION_YSCROLL = 'y scroll';
 Blockly.Msg.MOTION_STAGE_SELECTED = 'Stage selected: no motion blocks';
 
+// MARTY V2 Motion Blocks
+Blockly.Msg.MV2_GETREADY = '%1 %2 Get ready!';
+Blockly.Msg.MV2_WALK_FW = '%1 %2 Walk %3 steps forwards';
+Blockly.Msg.MV2_WALK_BW = '%1 %2 Walk %3 steps backwards';
+Blockly.Msg.MV2_WALK = '%1 %2 Walk %3 steps with step length %4mm and step time %5s, and turn %6°';
+Blockly.Msg.MV2_TURN = '%1 %2 Turn %3 steps %4';
+Blockly.Msg.MV2_WIGGLE = '%1 %2 Wiggle';
+Blockly.Msg.MV2_CIRCLE = '%1 %2 Circle dance %4 for %3s';
+Blockly.Msg.MV2_KICK = '%1 %2 Kick %3 leg';
+Blockly.Msg.MV2_SLIDE = '%1 %2 Slide %3 times to the %4';
+Blockly.Msg.MV2_LEAN = '%1 %2 Lean %4 for %3s';
+Blockly.Msg.MV2_EYES = '%1 %2 Eyes: %3';
+Blockly.Msg.MV2_MOVELEG = '%1 %2 Move %3 leg %4';
+Blockly.Msg.MV2_LIFTFOOT = '%1 %2 Lift %3 foot';
+Blockly.Msg.MV2_LOWERFOOT = '%1 %2 Lower %3 foot';
+Blockly.Msg.MV2_MOVEJOINT = '%1 %2 Move %3 to %4° in %5s';
+Blockly.Msg.MV2_WAVE = '%1 %2 Wave %3 arm';
+Blockly.Msg.MV2_DANCE = '%1 %2 Dance!';
+Blockly.Msg.MV2_STANDSTRAIGHT = '%1 %2 Stand straight in %3s';
+Blockly.Msg.MV2_HOLD = '%1 %2 Hold this position for %3s';
+
 // Operators blocks
 Blockly.Msg.OPERATORS_ADD = '%1 + %2';
 Blockly.Msg.OPERATORS_SUBTRACT = '%1 - %2';
@@ -265,6 +286,15 @@ Blockly.Msg.SENSING_DAYSSINCE2000 = 'days since 2000';
 Blockly.Msg.SENSING_USERNAME = 'username';
 Blockly.Msg.SENSING_USERID = 'user id';
 
+// MARTY V2 sensing blocks
+
+Blockly.Msg.MV2_BATTERYLEVEL = '%1 %2 Remaining battery (%)';
+Blockly.Msg.MV2_POSITION = '%1 %2 Position of %3 joint (in ° from \'zero\')';
+Blockly.Msg.MV2_CURRENT = '%1 %2 Current at %3 joint (in mA)';
+Blockly.Msg.MV2_ACCELEROMETERX = '%1 %2 Accelerometer X';
+Blockly.Msg.MV2_ACCELEROMETERY = '%1 %2 Accelerometer Y';
+Blockly.Msg.MV2_ACCELEROMETERZ = '%1 %2 Accelerometer Z';
+
 // Sound blocks
 Blockly.Msg.SOUND_PLAY = 'start sound %1';
 Blockly.Msg.SOUND_PLAYUNTILDONE = 'play sound %1 until done';
@@ -278,6 +308,9 @@ Blockly.Msg.SOUND_CHANGEVOLUMEBY = 'change volume by %1';
 Blockly.Msg.SOUND_SETVOLUMETO = 'set volume to %1%';
 Blockly.Msg.SOUND_VOLUME = 'volume';
 Blockly.Msg.SOUND_RECORD = 'record...';
+
+// MARTY V2 sound blocks
+Blockly.Msg.MV2_PLAYSOUND = '%1 %2 Play sound: %3';
 
 // Category labels
 Blockly.Msg.CATEGORY_MOTION = 'Motion';
@@ -350,3 +383,33 @@ Blockly.Msg.NEW_BROADCAST_MESSAGE = 'New message';
 Blockly.Msg.NEW_BROADCAST_MESSAGE_TITLE = 'New message name:';
 Blockly.Msg.BROADCAST_MODAL_TITLE = 'New Message';
 Blockly.Msg.DEFAULT_BROADCAST_MESSAGE_NAME = 'message1';
+
+// MARTY V2 block drop-down options
+Blockly.Msg.DROPDOWN_OPTION_LEFT = 'left';
+Blockly.Msg.DROPDOWN_OPTION_RIGHT = 'right';
+Blockly.Msg.DROPDOWN_OPTION_FORWARD = 'forward';
+Blockly.Msg.DROPDOWN_OPTION_BACKWARD = 'backward';
+Blockly.Msg.DROPDOWN_OPTION_EXCITED = 'excited';
+Blockly.Msg.DROPDOWN_OPTION_WIDE = 'wide';
+Blockly.Msg.DROPDOWN_OPTION_ANGRY = 'angry';
+Blockly.Msg.DROPDOWN_OPTION_NORMAL = 'normal';
+Blockly.Msg.DROPDOWN_OPTION_WIGGLE = 'wiggle';
+Blockly.Msg.DROPDOWN_OPTION_LEFTHIP = 'left hip';
+Blockly.Msg.DROPDOWN_OPTION_LEFTTWIST = 'left twist';
+Blockly.Msg.DROPDOWN_OPTION_LEFTKNEE = 'left knee';
+Blockly.Msg.DROPDOWN_OPTION_RIGHTHIP = 'right hip';
+Blockly.Msg.DROPDOWN_OPTION_RIGHTTWIST = 'right twist';
+Blockly.Msg.DROPDOWN_OPTION_RIGHTKNEE = 'right knee';
+Blockly.Msg.DROPDOWN_OPTION_LEFTARM = 'left arm';
+Blockly.Msg.DROPDOWN_OPTION_RIGHTARM = 'right arm';
+Blockly.Msg.DROPDOWN_OPTION_EYES = 'eyes';
+Blockly.Msg.DROPDOWN_OPTION_CONFUSIONSOUND = 'confusion';
+Blockly.Msg.DROPDOWN_OPTION_DISBELIEFSOUND = 'disbelief';
+Blockly.Msg.DROPDOWN_OPTION_EXCITEMENTSOUND = 'excitement';
+Blockly.Msg.DROPDOWN_OPTION_NOWAYSOUND = 'no way!';
+Blockly.Msg.DROPDOWN_OPTION_NOSOUND = 'no!';
+Blockly.Msg.DROPDOWN_OPTION_WHISTLESOUND = 'whistle';
+
+
+
+
