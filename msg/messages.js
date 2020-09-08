@@ -294,6 +294,7 @@ Blockly.Msg.MV2_CURRENT = '%1 %2 Current at %3 joint (in mA)';
 Blockly.Msg.MV2_ACCELEROMETERX = '%1 %2 Accelerometer X';
 Blockly.Msg.MV2_ACCELEROMETERY = '%1 %2 Accelerometer Y';
 Blockly.Msg.MV2_ACCELEROMETERZ = '%1 %2 Accelerometer Z';
+Blockly.MV2_OBSTACLE = "%1 %2 %3 Foot Obstacle Sensed";
 
 // Sound blocks
 Blockly.Msg.SOUND_PLAY = 'start sound %1';

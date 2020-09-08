@@ -904,6 +904,41 @@ Blockly.Blocks['ZAxisMovement'] = {
   }
 };
 
+Blockly.Blocks['mv2_obstaclesense'] = {
+  /**
+   * Block to report on obstacle detection from an IR sensor
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_OBSTACLE,
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SENSORCHOICE",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, 'LeftIRFootTouch' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT , 'RightIRFootTouch' ]
+          ]
+        },
+      ],
+      "extensions": ["output_boolean"]
+    });
+  }
+};
+
 // MISC/DEBUG
 
 Blockly.Blocks['mv2_demo_sensor'] = {

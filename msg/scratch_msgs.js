@@ -4174,6 +4174,7 @@ Blockly.ScratchMsgs.locales["en"] =
     "MV2_ACCELEROMETERX": "%1 %2 Accelerometer X",
     "MV2_ACCELEROMETERY": "%1 %2 Accelerometer Y",
     "MV2_ACCELEROMETERZ": "%1 %2 Accelerometer Z",
+    "MV2_OBSTACLE": "%1 %2 %3 Foot Obstacle Sensed",
     "MV2_PLAYSOUND": "%1 %2 Play sound: %3",
     "DROPDOWN_OPTION_LEFT": "left",
     "DROPDOWN_OPTION_RIGHT": "right",
