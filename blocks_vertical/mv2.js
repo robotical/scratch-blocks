@@ -939,6 +939,103 @@ Blockly.Blocks['mv2_obstaclesense'] = {
   }
 };
 
+Blockly.Blocks['mv2_groundsense'] = {
+  /**
+   * Block to report on obstacle detection from an IR sensor
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_GROUND,
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SENSORCHOICE",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, 'LeftIRFootAir' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT , 'RightIRFootAir' ]
+          ]
+        },
+      ],
+      "extensions": ["output_boolean"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_coloursense'] = {
+  /**
+   * Block to report on colour detection from a colour sensing foot
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_COLOUR,
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SENSORCHOICE",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, 'LeftColourSensor' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT , 'RightColourSensor' ]
+          ]
+        },
+      ],
+      "extensions": ["output_string"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_distancesense'] = {
+  /**
+   * Block to report on distance sensor
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_DISTANCE,
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+      ],
+      "extensions": ["output_number"]
+    });
+  }
+};
+
 // MISC/DEBUG
 
 Blockly.Blocks['mv2_demo_sensor'] = {

@@ -295,6 +295,9 @@ Blockly.Msg.MV2_ACCELEROMETERX = '%1 %2 Accelerometer X';
 Blockly.Msg.MV2_ACCELEROMETERY = '%1 %2 Accelerometer Y';
 Blockly.Msg.MV2_ACCELEROMETERZ = '%1 %2 Accelerometer Z';
 Blockly.MV2_OBSTACLE = "%1 %2 %3 Foot Obstacle Sensed";
+Blockly.MV2_GROUND = "%1 %2 %3 Foot sensor on the ground";
+Blockly.MV2_COLOUR = "%1 %2 %3 Foot Colour Sensor";
+Blockly.MV2_DISTANCE = "%1 %2 Distance Sensor";
 
 // Sound blocks
 Blockly.Msg.SOUND_PLAY = 'start sound %1';
