@@ -1009,6 +1009,51 @@ Blockly.Blocks['mv2_coloursense'] = {
   }
 };
 
+Blockly.Blocks['mv2_coloursenseraw'] = {
+  /**
+   * Block to report a specific numeric reading from a colour sensor channel
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_COLOUR_RAW,
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SENSORCHOICE",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, 'LeftColourSensor' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT , 'RightColourSensor' ]
+          ]
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SENSORCHANNEL",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_CLEAR, 'Clear' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RED , 'Red' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_GREEN, 'Green'],
+            [ Blockly.Msg.DROPDOWN_OPTION_BLUE, 'Blue'],
+          ]
+        },
+      ],
+      "extensions": ["output_number"]
+    });
+  }
+};
+
 Blockly.Blocks['mv2_distancesense'] = {
   /**
    * Block to report on distance sensor
