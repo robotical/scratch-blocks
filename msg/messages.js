@@ -294,6 +294,11 @@ Blockly.Msg.MV2_CURRENT = '%1 %2 Current at %3 joint (in mA)';
 Blockly.Msg.MV2_ACCELEROMETERX = '%1 %2 Accelerometer X';
 Blockly.Msg.MV2_ACCELEROMETERY = '%1 %2 Accelerometer Y';
 Blockly.Msg.MV2_ACCELEROMETERZ = '%1 %2 Accelerometer Z';
+Blockly.Msg.MV2_OBSTACLE = "%1 %2 %3 Foot Obstacle Sensed";
+Blockly.Msg.MV2_GROUND = "%1 %2 %3 Foot sensor on the ground";
+Blockly.Msg.MV2_COLOUR = "%1 %2 %3 Foot Colour Sensor";
+Blockly.Msg.MV2_COLOUR_RAW = "%1 %2 %3 Colour Sensor %4 channel";
+Blockly.Msg.MV2_DISTANCE = "%1 %2 Distance Sensor";
 
 // Sound blocks
 Blockly.Msg.SOUND_PLAY = 'start sound %1';
@@ -409,6 +414,10 @@ Blockly.Msg.DROPDOWN_OPTION_EXCITEMENTSOUND = 'excitement';
 Blockly.Msg.DROPDOWN_OPTION_NOWAYSOUND = 'no way!';
 Blockly.Msg.DROPDOWN_OPTION_NOSOUND = 'no!';
 Blockly.Msg.DROPDOWN_OPTION_WHISTLESOUND = 'whistle';
+Blockly.Msg.DROPDOWN_OPTION_CLEAR = 'clear';
+Blockly.Msg.DROPDOWN_OPTION_RED = 'red';
+Blockly.Msg.DROPDOWN_OPTION_GREEN = 'green';
+Blockly.Msg.DROPDOWN_OPTION_BLUE = 'blue';
 
 
 
