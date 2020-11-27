@@ -1081,6 +1081,85 @@ Blockly.Blocks['mv2_distancesense'] = {
   }
 };
 
+Blockly.Blocks['mv2_lightsense'] = {
+  /**
+   * Block to report a specific numeric reading from a colour sensor channel
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_LIGHT_SENSOR,
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SENSORCHOICE",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, 'LeftLightSensor' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT , 'RightLightSensor' ]
+          ]
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SENSORCHANNEL",
+          "options": [
+            [ '1', 'Reading1' ],
+            [ '2' , 'Reading2' ],
+            [ '3', 'Reading3' ]
+          ]
+        }
+      ],
+      "extensions": ["output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_noisesense'] = {
+  /**
+   * Block to report on distance sensor
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_NOISE_SENSOR,
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "SENSORCHOICE",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_LEFT, 'LeftNoiseSensor' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_RIGHT , 'RightNoiseSensor' ]
+          ]
+        },
+      ],
+      "extensions": ["output_number"]
+    });
+  }
+};
+
 // MISC/DEBUG
 
 Blockly.Blocks['mv2_demo_sensor'] = {
