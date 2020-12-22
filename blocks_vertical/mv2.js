@@ -34,14 +34,15 @@ Blockly.Blocks['mv2_getReady'] = {
   }
 };
 
-Blockly.Blocks['mv2_discoEyes'] = {
+
+Blockly.Blocks['mv2_discoChangeAll'] = {
   /**
    * Block to make Marty freeze
    * @this Blockly.Block
    */
   init: function() {
     this.jsonInit({
-      "message0": Blockly.Msg.MV2_DISCOEYES,
+      "message0": Blockly.Msg.MV2_DISCOCHANGEALL,
       "category": Blockly.Categories.control,
       "colour": 164,
       "args0": [
@@ -53,6 +54,103 @@ Blockly.Blocks['mv2_discoEyes'] = {
         },
         {
           "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "COLOUR",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_RED, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_GREEN, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_BLUE, '2'],
+            [ Blockly.Msg.DROPDOWN_OPTION_PINK, '3'],
+            [ Blockly.Msg.DROPDOWN_OPTION_YELLOW, '4'],
+            [ Blockly.Msg.DROPDOWN_OPTION_WHITE, '5'],
+            [ Blockly.Msg.DROPDOWN_OPTION_OFF, '6']
+          ]
+        }
+      ],
+      "extensions": ["shape_statement"]
+    });
+  }
+};
+
+
+Blockly.Blocks['mv2_discoChangeAllPattern'] = {
+  /**
+   * Block to make Marty freeze
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_DISCOCHANGEALLPATTERN,
+      "category": Blockly.Categories.control,
+      "colour": 164,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "PATTERN",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_LEDSPATTERNONE, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_LEDSPATTERNTWO, '1' ]
+          ]
+        }
+      ],
+      "extensions": ["shape_statement"]
+    });
+  }
+};
+
+
+Blockly.Blocks['mv2_discoBlockColour'] = {
+  /**
+   * Block to make Marty freeze
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_DISCOBLOCKCOLOUR,
+      "category": Blockly.Categories.control,
+      "colour": 164,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "DISCOBLOCK",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_EYES, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_ARMS, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_FEET, '2']
+          ]
+        },
+        {
+          "type": "field_dropdown",
+          "name": "COLOUR",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_RED, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_GREEN, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_BLUE, '2'],
+            [ Blockly.Msg.DROPDOWN_OPTION_PINK, '3'],
+            [ Blockly.Msg.DROPDOWN_OPTION_YELLOW, '4'],
+            [ Blockly.Msg.DROPDOWN_OPTION_WHITE, '5'],
+            [ Blockly.Msg.DROPDOWN_OPTION_OFF, '6']
+          ]
         }
       ],
       "extensions": ["shape_statement"]

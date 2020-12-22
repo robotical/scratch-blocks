@@ -180,10 +180,14 @@ Blockly.Msg.MOTION_XSCROLL = 'x scroll';
 Blockly.Msg.MOTION_YSCROLL = 'y scroll';
 Blockly.Msg.MOTION_STAGE_SELECTED = 'Stage selected: no motion blocks';
 
+
+// Marty V2 Disco Blocks
+Blockly.Msg.MV2_DISCOBLOCKCOLOUR = '%1 %2 Set %3 LEDs to %4';
+Blockly.Msg.MV2_DISCOCHANGEALL = '%1 %2 Set all LEDs to %3';
+Blockly.Msg.MV2_DISCOCHANGEALLPATTERN = '%1 %2 Set all LEDs to pattern %3';
+
 // MARTY V2 Motion Blocks
 Blockly.Msg.MV2_GETREADY = '%1 %2 Get ready!';
-Blockly.Msg.MV2_DISCOEYES = '%1 %2 Get ready!';
-
 Blockly.Msg.MV2_WALK_FW = '%1 %2 Walk %3 steps forwards';
 Blockly.Msg.MV2_WALK_BW = '%1 %2 Walk %3 steps backwards';
 Blockly.Msg.MV2_WALK = '%1 %2 Walk %3 steps with step length %4mm and step time %5s, and turn %6°';
@@ -412,6 +416,8 @@ Blockly.Msg.DROPDOWN_OPTION_RIGHTKNEE = 'right knee';
 Blockly.Msg.DROPDOWN_OPTION_LEFTARM = 'left arm';
 Blockly.Msg.DROPDOWN_OPTION_RIGHTARM = 'right arm';
 Blockly.Msg.DROPDOWN_OPTION_EYES = 'eyes';
+Blockly.Msg.DROPDOWN_OPTION_ARMS = 'arms';
+Blockly.Msg.DROPDOWN_OPTION_FEET = 'feet';
 Blockly.Msg.DROPDOWN_OPTION_CONFUSIONSOUND = 'confusion';
 Blockly.Msg.DROPDOWN_OPTION_DISBELIEFSOUND = 'disbelief';
 Blockly.Msg.DROPDOWN_OPTION_EXCITEMENTSOUND = 'excitement';
@@ -422,7 +428,11 @@ Blockly.Msg.DROPDOWN_OPTION_CLEAR = 'clear';
 Blockly.Msg.DROPDOWN_OPTION_RED = 'red';
 Blockly.Msg.DROPDOWN_OPTION_GREEN = 'green';
 Blockly.Msg.DROPDOWN_OPTION_BLUE = 'blue';
-
-
+Blockly.Msg.DROPDOWN_OPTION_PINK = 'pink';
+Blockly.Msg.DROPDOWN_OPTION_YELLOW = 'yellow';
+Blockly.Msg.DROPDOWN_OPTION_WHITE = 'white';
+Blockly.Msg.DROPDOWN_OPTION_OFF = 'off';
+Blockly.Msg.DROPDOWN_OPTION_LEDSPATTERNONE = 'one';
+Blockly.Msg.DROPDOWN_OPTION_LEDSPATTERNTWO = 'two';
 
 
