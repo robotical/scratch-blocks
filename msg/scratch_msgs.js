@@ -4151,6 +4151,7 @@ Blockly.ScratchMsgs.locales["en"] =
     "MOTION_YSCROLL": "y scroll",
     "MOTION_STAGE_SELECTED": "Stage selected: no motion blocks",
     "MV2_GETREADY": "%1 %2 Get ready!",
+    "MV2_DISCOEYES": "%1 %2 Get ready!",
     "MV2_WALK_FW": "%1 %2 Walk %3 steps forwards",
     "MV2_WALK_BW": "%1 %2 Walk %3 steps backwards",
     "MV2_WALK": "%1 %2 Walk %3 steps with step length %4mm and step time %5s, and turn %6°",

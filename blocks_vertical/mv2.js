@@ -34,6 +34,32 @@ Blockly.Blocks['mv2_getReady'] = {
   }
 };
 
+Blockly.Blocks['mv2_discoEyes'] = {
+  /**
+   * Block to make Marty freeze
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_DISCOEYES,
+      "category": Blockly.Categories.control,
+      "colour": 164,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        }
+      ],
+      "extensions": ["shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['mv2_walk_fw'] = {
   /**
    * Block to make Marty walk forwards
