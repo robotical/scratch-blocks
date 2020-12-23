@@ -35,14 +35,14 @@ Blockly.Blocks['mv2_getReady'] = {
 };
 
 
-Blockly.Blocks['mv2_discoChangeAll'] = {
+Blockly.Blocks['mv2_discoChangeAllColour'] = {
   /**
    * Block to make Marty freeze
    * @this Blockly.Block
    */
   init: function() {
     this.jsonInit({
-      "message0": Blockly.Msg.MV2_DISCOCHANGEALL,
+      "message0": Blockly.Msg.MV2_DISCOCHANGEALLCOLOUR,
       "category": Blockly.Categories.control,
       "colour": 164,
       "args0": [
@@ -99,8 +99,9 @@ Blockly.Blocks['mv2_discoChangeAllPattern'] = {
           "type": "field_dropdown",
           "name": "PATTERN",
           "options": [
-            [ Blockly.Msg.DROPDOWN_OPTION_LEDSPATTERNONE, '0' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_LEDSPATTERNTWO, '1' ]
+            [ Blockly.Msg.DROPDOWN_OPTION_ONE, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_TWO, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_OFF, '2' ]
           ]
         }
       ],
@@ -110,14 +111,14 @@ Blockly.Blocks['mv2_discoChangeAllPattern'] = {
 };
 
 
-Blockly.Blocks['mv2_discoBlockColour'] = {
+Blockly.Blocks['mv2_discoChangeBlockColour'] = {
   /**
    * Block to make Marty freeze
    * @this Blockly.Block
    */
   init: function() {
     this.jsonInit({
-      "message0": Blockly.Msg.MV2_DISCOBLOCKCOLOUR,
+      "message0": Blockly.Msg.MV2_DISCOCHANGEBLOCKCOLOUR,
       "category": Blockly.Categories.control,
       "colour": 164,
       "args0": [
@@ -132,7 +133,7 @@ Blockly.Blocks['mv2_discoBlockColour'] = {
         },
         {
           "type": "field_dropdown",
-          "name": "DISCOBLOCK",
+          "name": "BOARDTYPE",
           "options": [
             [ Blockly.Msg.DROPDOWN_OPTION_EYES, '0' ],
             [ Blockly.Msg.DROPDOWN_OPTION_ARMS, '1' ],
