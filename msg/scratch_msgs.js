@@ -4205,6 +4205,7 @@ Blockly.ScratchMsgs.locales["en"] =
     "DROPDOWN_OPTION_EYES": "eyes",
     "DROPDOWN_OPTION_ARMS": "arms",
     "DROPDOWN_OPTION_FEET": "feet",
+    "DROPDOWN_OPTION_ALL": "all",
     "DROPDOWN_OPTION_CONFUSIONSOUND": "confusion",
     "DROPDOWN_OPTION_DISBELIEFSOUND": "disbelief",
     "DROPDOWN_OPTION_EXCITEMENTSOUND": "excitement",
