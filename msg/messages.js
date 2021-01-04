@@ -183,7 +183,7 @@ Blockly.Msg.MOTION_STAGE_SELECTED = 'Stage selected: no motion blocks';
 
 // Marty V2 Disco Blocks
 Blockly.Msg.MV2_DISCOCHANGEBLOCKCOLOUR = '%1 %2 Set %3 LEDs to %4';
-// Blockly.Msg.MV2_DISCOCHANGEALLCOLOUR = '%1 %2 Set all LEDs to %3';
+Blockly.Msg.MV2_DISCOCHANGEREGIONCOLOUR = '%1 %2 Set region %3 on %4 LEDs to %5';
 Blockly.Msg.MV2_DISCOCHANGEBLOCKPATTERN = '%1 %2 Set %3 LEDs to pattern %4';
 
 // MARTY V2 Motion Blocks
@@ -435,5 +435,6 @@ Blockly.Msg.DROPDOWN_OPTION_WHITE = 'white';
 Blockly.Msg.DROPDOWN_OPTION_OFF = 'off';
 Blockly.Msg.DROPDOWN_OPTION_ONE = 'one';
 Blockly.Msg.DROPDOWN_OPTION_TWO = 'two';
+Blockly.Msg.DROPDOWN_OPTION_THREE = 'three';
 
 
