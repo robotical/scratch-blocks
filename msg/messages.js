@@ -200,6 +200,8 @@ Blockly.Msg.MV2_WAVE = '%1 %2 Wave %3 arm';
 Blockly.Msg.MV2_DANCE = '%1 %2 Dance!';
 Blockly.Msg.MV2_STANDSTRAIGHT = '%1 %2 Stand straight in %3s';
 Blockly.Msg.MV2_HOLD = '%1 %2 Hold this position for %3s';
+Blockly.Msg.MV2_GRIPPERARMBASIC = '%1 %2 %3 gripper arm';
+Blockly.Msg.MV2_GRIPPERARMTIMED = '%1 %2 %3 gripper arm in %4s';
 
 // Operators blocks
 Blockly.Msg.OPERATORS_ADD = '%1 + %2';
@@ -396,6 +398,8 @@ Blockly.Msg.DROPDOWN_OPTION_LEFT = 'left';
 Blockly.Msg.DROPDOWN_OPTION_RIGHT = 'right';
 Blockly.Msg.DROPDOWN_OPTION_FORWARD = 'forward';
 Blockly.Msg.DROPDOWN_OPTION_BACKWARD = 'backward';
+Blockly.Msg.DROPDOWN_OPTION_OPEN = 'open';
+Blockly.Msg.DROPDOWN_OPTION_CLOSE = 'close';
 Blockly.Msg.DROPDOWN_OPTION_EXCITED = 'excited';
 Blockly.Msg.DROPDOWN_OPTION_WIDE = 'wide';
 Blockly.Msg.DROPDOWN_OPTION_ANGRY = 'angry';
