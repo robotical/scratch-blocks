@@ -200,8 +200,8 @@ Blockly.Msg.MV2_WAVE = '%1 %2 Wave %3 arm';
 Blockly.Msg.MV2_DANCE = '%1 %2 Dance!';
 Blockly.Msg.MV2_STANDSTRAIGHT = '%1 %2 Stand straight in %3s';
 Blockly.Msg.MV2_HOLD = '%1 %2 Hold this position for %3s';
-Blockly.Msg.MV2_GRIPPERARMBASIC = '%1 %2 %3 gripper arm';
-Blockly.Msg.MV2_GRIPPERARMTIMED = '%1 %2 %3 gripper arm in %4s';
+Blockly.Msg.MV2_GRABBERARMBASIC = '%1 %2 %3 grabber arm';
+Blockly.Msg.MV2_GRABBERARMTIMED = '%1 %2 %3 grabber arm in %4s';
 
 // Operators blocks
 Blockly.Msg.OPERATORS_ADD = '%1 + %2';

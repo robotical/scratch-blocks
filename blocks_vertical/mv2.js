@@ -672,14 +672,14 @@ Blockly.Blocks['mv2_hold'] = {
 
 
 
-Blockly.Blocks['mv2_gripperArmBasic'] = {
+Blockly.Blocks['mv2_grabberArmBasic'] = {
   /**
    * Block to make Marty wave
    * @this Blockly.Block
    */
   init: function() {
     this.jsonInit({
-      "message0": Blockly.Msg.MV2_GRIPPERARMBASIC,
+      "message0": Blockly.Msg.MV2_GRABBERARMBASIC,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
@@ -707,14 +707,14 @@ Blockly.Blocks['mv2_gripperArmBasic'] = {
 };
 
 
-Blockly.Blocks['mv2_gripperArmTimed'] = {
+Blockly.Blocks['mv2_grabberArmTimed'] = {
   /**
    * Block to make Marty wave
    * @this Blockly.Block
    */
   init: function() {
     this.jsonInit({
-      "message0": Blockly.Msg.MV2_GRIPPERARMTIMED,
+      "message0": Blockly.Msg.MV2_GRABBERARMTIMED,
       "category": Blockly.Categories.motion,
       "colour": 164,
       "args0": [
