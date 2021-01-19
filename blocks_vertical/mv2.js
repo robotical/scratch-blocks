@@ -114,17 +114,8 @@ Blockly.Blocks['mv2_discoChangeBlockColour'] = {
           ]
         },
         {
-          "type": "field_dropdown",
-          "name": "COLOUR",
-          "options": [
-            [ Blockly.Msg.DROPDOWN_OPTION_RED, '0' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_GREEN, '1' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_BLUE, '2'],
-            [ Blockly.Msg.DROPDOWN_OPTION_PINK, '3'],
-            [ Blockly.Msg.DROPDOWN_OPTION_YELLOW, '4'],
-            [ Blockly.Msg.DROPDOWN_OPTION_WHITE, '5'],
-            [ Blockly.Msg.DROPDOWN_OPTION_OFF, '6']
-          ]
+          "type": "input_value",
+          "name": "COLOR"
         }
       ],
       "extensions": ["shape_statement"]
@@ -176,17 +167,8 @@ Blockly.Blocks['mv2_discoChangeRegionColour'] = {
           ]
         },
         {
-          "type": "field_dropdown",
-          "name": "COLOUR",
-          "options": [
-            [ Blockly.Msg.DROPDOWN_OPTION_RED, '0' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_GREEN, '1' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_BLUE, '2'],
-            [ Blockly.Msg.DROPDOWN_OPTION_PINK, '3'],
-            [ Blockly.Msg.DROPDOWN_OPTION_YELLOW, '4'],
-            [ Blockly.Msg.DROPDOWN_OPTION_WHITE, '5'],
-            [ Blockly.Msg.DROPDOWN_OPTION_OFF, '6']
-          ]
+          "type": "input_value",
+          "name": "COLOR"
         }
       ],
       "extensions": ["shape_statement"]
