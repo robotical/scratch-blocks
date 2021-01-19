@@ -34,6 +34,166 @@ Blockly.Blocks['mv2_getReady'] = {
   }
 };
 
+
+Blockly.Blocks['mv2_discoChangeBlockPattern'] = {
+  /**
+   * Block to make Marty freeze
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_DISCOCHANGEBLOCKPATTERN,
+      "category": Blockly.Categories.looks,
+      "colour": 164,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "BOARDTYPE",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_EYES, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_ARMS, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_FEET, '2'],
+            [ Blockly.Msg.DROPDOWN_OPTION_ALL, '3']
+          ]
+        },
+        {
+          "type": "field_dropdown",
+          "name": "PATTERN",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_ONE, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_TWO, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_OFF, '2' ]
+          ]
+        }
+      ],
+      "extensions": ["shape_statement"]
+    });
+  }
+};
+
+
+Blockly.Blocks['mv2_discoChangeBlockColour'] = {
+  /**
+   * DISCO MARTY BLOCK
+   * Block to change the colour of both arms, 
+   * both legs, both feet or all to a preset colour
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_DISCOCHANGEBLOCKCOLOUR,
+      "category": Blockly.Categories.looks,
+      "colour": 164,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "BOARDTYPE",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_EYES, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_ARMS, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_FEET, '2'],
+            [ Blockly.Msg.DROPDOWN_OPTION_ALL, '3']
+          ]
+        },
+        {
+          "type": "field_dropdown",
+          "name": "COLOUR",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_RED, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_GREEN, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_BLUE, '2'],
+            [ Blockly.Msg.DROPDOWN_OPTION_PINK, '3'],
+            [ Blockly.Msg.DROPDOWN_OPTION_YELLOW, '4'],
+            [ Blockly.Msg.DROPDOWN_OPTION_WHITE, '5'],
+            [ Blockly.Msg.DROPDOWN_OPTION_OFF, '6']
+          ]
+        }
+      ],
+      "extensions": ["shape_statement"]
+    });
+  }
+};
+
+
+
+Blockly.Blocks['mv2_discoChangeRegionColour'] = {
+  /**
+   * DISCO MARTY BLOCK
+   * Block to change the colour on a specified region 
+   * of both arms, both legs, both feet or all to a preset colour
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": Blockly.Msg.MV2_DISCOCHANGEREGIONCOLOUR,
+      "category": Blockly.Categories.looks,
+      "colour": 164,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "field_dropdown",
+          "name": "REGION",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_ONE, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_TWO, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_THREE, '2']
+          ]
+        },
+        {
+          "type": "field_dropdown",
+          "name": "BOARDTYPE",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_EYES, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_ARMS, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_FEET, '2'],
+            [ Blockly.Msg.DROPDOWN_OPTION_ALL, '3']
+          ]
+        },
+        {
+          "type": "field_dropdown",
+          "name": "COLOUR",
+          "options": [
+            [ Blockly.Msg.DROPDOWN_OPTION_RED, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_GREEN, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_BLUE, '2'],
+            [ Blockly.Msg.DROPDOWN_OPTION_PINK, '3'],
+            [ Blockly.Msg.DROPDOWN_OPTION_YELLOW, '4'],
+            [ Blockly.Msg.DROPDOWN_OPTION_WHITE, '5'],
+            [ Blockly.Msg.DROPDOWN_OPTION_OFF, '6']
+          ]
+        }
+      ],
+      "extensions": ["shape_statement"]
+    });
+  }
+};
+
 Blockly.Blocks['mv2_walk_fw'] = {
   /**
    * Block to make Marty walk forwards
