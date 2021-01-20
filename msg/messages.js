@@ -358,6 +358,13 @@ Blockly.Msg.WORKSPACE_COMMENT_DEFAULT_TEXT = 'Say something...';
 Blockly.Msg.COLOUR_HUE_LABEL = 'Color';
 Blockly.Msg.COLOUR_SATURATION_LABEL = 'Saturation';
 Blockly.Msg.COLOUR_BRIGHTNESS_LABEL = 'Brightness';
+Blockly.Msg.COLOUR_RED = 'Red';
+Blockly.Msg.COLOUR_YELLOW = 'Yellow';
+Blockly.Msg.COLOUR_GREEN = 'Green';
+Blockly.Msg.COLOUR_CYAN = 'Cyan';
+Blockly.Msg.COLOUR_BLUE = 'Blue';
+Blockly.Msg.COLOUR_PURPLE = 'Purple';
+Blockly.Msg.COLOUR_PINK = 'Pink';
 
 // Variables
 // @todo Remove these once fully managed by Scratch VM / Scratch GUI

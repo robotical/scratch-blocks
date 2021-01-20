@@ -177,8 +177,19 @@ Blockly.FieldColourSlider.prototype.updateDom_ = function() {
     this.setGradient_(this.saturationSlider_.getElement(), 'saturation');
     this.setGradient_(this.brightnessSlider_.getElement(), 'brightness');
 
+    let hue = Math.floor(100 * this.hue_ / 360).toFixed(0);
+    let hueString = Blockly.Msg.COLOUR_RED;
+    if (hue < 7 || hue > 93){ hueString = Blockly.Msg.COLOUR_RED;}
+    else if (hue < 18){ hueString = Blockly.Msg.COLOUR_YELLOW;}
+    else if (hue < 45){ hueString = Blockly.Msg.COLOUR_GREEN;}
+    else if (hue < 54){ hueString = Blockly.Msg.COLOUR_CYAN;}
+    else if (hue < 75){ hueString = Blockly.Msg.COLOUR_BLUE;}
+    else if (hue < 80){ hueString = Blockly.Msg.COLOUR_PURPLE;}
+    else { hueString = Blockly.Msg.COLOUR_PINK;}
+    hueString += " (" + hue + ")";
+
     // Update the readouts
-    this.hueReadout_.textContent = Math.floor(100 * this.hue_ / 360).toFixed(0);
+    this.hueReadout_.textContent = hueString;
     this.saturationReadout_.textContent = Math.floor(100 * this.saturation_).toFixed(0);
     this.brightnessReadout_.textContent = Math.floor(100 * this.brightness_ / 255).toFixed(0);
   }
