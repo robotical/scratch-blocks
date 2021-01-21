@@ -4224,6 +4224,7 @@ Blockly.ScratchMsgs.locales["en"] =
     "DROPDOWN_OPTION_YELLOW": "yellow",
     "DROPDOWN_OPTION_WHITE": "white",
     "DROPDOWN_OPTION_OFF": "off",
+    "DROPDOWN_OPTION_ZERO": "zero",
     "DROPDOWN_OPTION_ONE": "one",
     "DROPDOWN_OPTION_TWO": "two",
     "DROPDOWN_OPTION_THREE": "three",
