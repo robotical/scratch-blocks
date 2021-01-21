@@ -151,9 +151,9 @@ Blockly.Blocks['mv2_discoChangeRegionColour'] = {
           "type": "field_dropdown",
           "name": "REGION",
           "options": [
-            [ Blockly.Msg.DROPDOWN_OPTION_ONE, '0' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_TWO, '1' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_THREE, '2']
+            [ Blockly.Msg.DROPDOWN_OPTION_ZERO, '0' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_ONE, '1' ],
+            [ Blockly.Msg.DROPDOWN_OPTION_TWO, '2']
           ]
         },
         {

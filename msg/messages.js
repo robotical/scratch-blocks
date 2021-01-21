@@ -437,6 +437,7 @@ Blockly.Msg.DROPDOWN_OPTION_PINK = 'pink';
 Blockly.Msg.DROPDOWN_OPTION_YELLOW = 'yellow';
 Blockly.Msg.DROPDOWN_OPTION_WHITE = 'white';
 Blockly.Msg.DROPDOWN_OPTION_OFF = 'off';
+Blockly.Msg.DROPDOWN_OPTION_ZERO = 'zero';
 Blockly.Msg.DROPDOWN_OPTION_ONE = 'one';
 Blockly.Msg.DROPDOWN_OPTION_TWO = 'two';
 Blockly.Msg.DROPDOWN_OPTION_THREE = 'three';
