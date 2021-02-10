@@ -693,16 +693,18 @@ Blockly.Blocks['mv2_playSound'] = {
           "type": "field_vertical_separator"
         },
         {
-          "type": "field_dropdown",
-          "name": "SOUND",
-          "options": [
-            [ Blockly.Msg.DROPDOWN_OPTION_CONFUSIONSOUND, 'confused.raw' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_DISBELIEFSOUND, 'disbelief.raw' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_EXCITEMENTSOUND, 'excited.raw' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_NOWAYSOUND, 'no_way.raw' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_NOSOUND, 'no.raw' ],
-            [ Blockly.Msg.DROPDOWN_OPTION_WHISTLESOUND, 'whistle.raw' ],
-          ]
+          "type": "input_value",
+          "name": "SOUND_MENU"
+          // "type": "field_dropdown",
+          // "name": "SOUND",
+          // "options": [
+          //   [ Blockly.Msg.DROPDOWN_OPTION_CONFUSIONSOUND, 'confused.raw' ],
+          //   [ Blockly.Msg.DROPDOWN_OPTION_DISBELIEFSOUND, 'disbelief.raw' ],
+          //   [ Blockly.Msg.DROPDOWN_OPTION_EXCITEMENTSOUND, 'excited.raw' ],
+          //   [ Blockly.Msg.DROPDOWN_OPTION_NOWAYSOUND, 'no_way.raw' ],
+          //   [ Blockly.Msg.DROPDOWN_OPTION_NOSOUND, 'no.raw' ],
+          //   [ Blockly.Msg.DROPDOWN_OPTION_WHISTLESOUND, 'whistle.raw' ],
+          // ]
         },
       ],
       "extensions": ["shape_statement"]
