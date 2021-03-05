@@ -6,6 +6,43 @@ goog.require('Blockly.Colours');
 goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 
+Blockly.Blocks['mv2_addonlist_menu'] = {
+  /**
+   * Sound effects drop-down menu.
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1",
+      "args0": [
+        {
+          "type": "field_dropdown",
+          "name": "ADDONLIST",
+          "options": [
+            ['1', '0'],
+            ['2', '1'],
+            ['3', '2'],
+            ['4', '3'],
+            ['5', '4'],
+            ['6', '5'],
+            ['7', '6'],
+            ['8', '7'],
+            ['9', '8'],
+            ['10', '9'],
+            ['call a function', function() {
+              window.alert('function called!');}
+            ]
+          ]
+        }
+      ],
+      "colour": Blockly.Colours.sounds.secondary,
+      "colourSecondary": Blockly.Colours.sounds.secondary,
+      "colourTertiary": Blockly.Colours.sounds.tertiary,
+      "extensions": ["output_string"]
+    });
+  }
+};
+
 // MOTION
 
 Blockly.Blocks['mv2_getReady'] = {
@@ -1370,6 +1407,37 @@ Blockly.Blocks['mv2_noisesense'] = {
             [ Blockly.Msg.DROPDOWN_OPTION_RIGHT , 'RightNoiseSensor' ]
           ]
         },
+      ],
+      "extensions": ["output_number"]
+    });
+  }
+};
+
+Blockly.Blocks['mv2_addonlist'] = {
+  /**
+   * Block to display the current through one of Marty's servos
+   * @this Blockly.Block
+   */
+  init: function() {
+    this.jsonInit({
+      "message0": "%1 %2 AddOn %3",
+      "category": Blockly.Categories.sensing,
+      "colour": 164,
+      "checkboxInFlyout": true,
+      "args0": [
+        {
+          "type": "field_image",
+          "src": Blockly.mainWorkspace.options.pathToMedia + "extensions/marty-small.svg",
+          "width": 40,
+          "height": 40
+        },
+        {
+          "type": "field_vertical_separator"
+        },
+        {
+          "type": "input_value",
+          "name": "ADDONLIST"
+        }
       ],
       "extensions": ["output_number"]
     });
